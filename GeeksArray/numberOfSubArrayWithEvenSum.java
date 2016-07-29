@@ -1,6 +1,7 @@
 
 public class numberOfSubArrayWithEvenSum {
-
+//its a great method and should be remembered and the best part is that u can use it with many problems...
+	//this commulative sum is very important and then should be taken care of
 
 	public static void main(String[] args){
 		int array[]=new int[]{
@@ -8,9 +9,7 @@ public class numberOfSubArrayWithEvenSum {
 		};
 		System.out.println(withEvenSum(array));
 	}
-	public static int withEvenSum(int[] array){
-		
-		
+	public static int withEvenSum(int[] array){				
 		int evenOdd[]=new int[]{
 				1,0
 		};
@@ -24,8 +23,6 @@ public class numberOfSubArrayWithEvenSum {
 		return result;		
 		
 		}
-		
-		
 		
 	}
 	

@@ -8,7 +8,7 @@ public class test {
         
        int i=2;
        if((i & 1)==0){
-    	   System.out.println("b");
+    	   System.out.println("gdffr");
        }
         }
     }

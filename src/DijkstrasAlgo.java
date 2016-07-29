@@ -38,7 +38,7 @@ public class DijkstrasAlgo {
                 if(distance[k]!=Integer.MAX_VALUE){
                 System.out.print(distance[k]+" ");
             }else{
-                System.out.print(-1);
+                System.out.print(-1);	
             }
         }
         }

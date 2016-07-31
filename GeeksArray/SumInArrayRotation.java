@@ -24,6 +24,7 @@ public class SumInArrayRotation {
 	}
 	return res;
 	}
+	
 	//O(n) solution
 	//idea of dynamic programing calculating the sum from the previous value
 	public static int maxSumGeek(int[] array){

@@ -3,20 +3,7 @@ import java.util.Queue;
 
 public class LevelOrderTraversalTree {
 
-	static class Node {
-		int data;
-		Node right;
-		Node left;
-
-		Node(int data) {
-			this.data = data;
-			left = right = null;
-		}
-		/*
-		 * public Node newNode(int data) { Node n = new Node(); n.data = data;
-		 * n.right = n.left = null; return n; }
-		 */
-	}
+	
 
 	public static void main(String[] args) {
 		// LevelOrderTraversalTree tree=new LevelOrderTraversalTree();
@@ -34,6 +21,7 @@ public class LevelOrderTraversalTree {
 		int h = height(root);
 		for (int i = 1; i <= h; i++) {
 			printGivenLevel(root, i);
+			System.out.println();
 		}
 
 	}
@@ -44,10 +32,12 @@ public class LevelOrderTraversalTree {
 			return;
 		}
 		if (height == 1) {
-			System.out.println(root.data + " ");
+			System.out.print(root.data + " ");
 		} else if (height > 1) {
+			//System.out.println("");
 			printGivenLevel(root.left, height - 1);
 			printGivenLevel(root.right, height - 1);
+			//System.out.println("");
 		}
 	}
 

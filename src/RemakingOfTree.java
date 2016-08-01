@@ -10,7 +10,21 @@ public class RemakingOfTree {
 		System.out.println(" "+root.data+ " "+root.left.data+ root.right.data+root.left.left.data+root.right.left.data);
 		preorder(root);
 	}
-	
+	static class Node{
+
+		int data;
+		Node left;
+		Node right;
+		
+		
+
+	}	
+	static Node newNode(int data){
+		Node node =new Node();
+		node.data=data;
+		node.left=node.right=null;
+		return node;
+	}
 	static void preorder(Node root){
 		if(root==null){
 			return ;		 
@@ -54,19 +68,7 @@ public class RemakingOfTree {
 		return index;
 	}
 
-	static Node newNode(int data){
-		Node node =new Node();
-		node.data=data;
-		node.left=node.right=null;
-		return node;
-	}
+	
 }
-class Node{
 
-	int data;
-	Node left;
-	Node right;
-
-
-}
 
